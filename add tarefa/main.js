@@ -17,6 +17,16 @@ function adicionarTarefa() {
         const novaTarefa = document.createElement("li");
         novaTarefa.innerHTML = textoTarefa;
 
+        // Criando o botão "Excluir"
+        const btnExcluir = document.createElement("button");
+        btnExcluir.textContent = "Excluir";
+
+        // Adicionando o evento de clique para remover o item
+        btnExcluir.onclick = () => listaTarefas.removeChild(novaTarefa);
+
+        // Adicionando o botão ao item da lista
+        novaTarefa.appendChild(btnExcluir);
+
         // Acrescentar a tarefa no elemente pai ul
         listaTarefas.appendChild(novaTarefa);
 
@@ -24,3 +34,4 @@ function adicionarTarefa() {
         tarefa.value = "";
     }
 }
+
