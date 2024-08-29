@@ -19,7 +19,7 @@ function adicionarTarefa() {
 
         // Acrescentar a tarefa no elemente pai ul
         listaTarefas.appendChild(novaTarefa);
-        
+
         // Limpar o campo de entrada (inpput)
         tarefa.value = "";
     }
