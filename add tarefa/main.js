@@ -21,10 +21,10 @@ function adicionarTarefa() {
         const btnExcluir = document.createElement("button");
         btnExcluir.textContent = "Excluir";
 
-        // Adicionando o evento de clique para remover o item
+        // Adicionando o evento de clique 
         btnExcluir.onclick = () => listaTarefas.removeChild(novaTarefa);
 
-        // Adicionando o botão ao item da lista
+        // Adicionando o botão no texto
         novaTarefa.appendChild(btnExcluir);
 
         // Acrescentar a tarefa no elemente pai ul
